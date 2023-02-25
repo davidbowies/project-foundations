@@ -23,6 +23,39 @@ h3 {
   width: 700px;
   border: 3px solid black;
   border-radius: 20px;
-  padding: 50px;
-  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.div2 {
+  display: flex;
+  width: 100%;
+  overflow: auto;
+}
+
+.div2>section.icons {
+  flex: 1;
+  box-sizing: border-box
+  padding: 20px;
+}
+
+.div2>section.icons {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.div2>section {
+  word-wrap: break-word;
+}
+
+ul {
+  display: block;
+  list-style: none;
+}
+
+.container {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #f2f2f2;
+  width: 300px;
 }
