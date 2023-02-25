@@ -1,12 +1,10 @@
 # PRIVATE TO DO LIST 
 **Key features:**
 
-** - Tasks and users are stored in the database **
-** - Authentication (aka login, registration, logout) for all users **
-** - Users can view, create, update, delete tasks **
-** - Authorization: Users can only manage their own tasks (and not the tasks of others) **
+** the project is going to be a private to do list 
+** it is going to include several sections and hopefully in the end an overview ** of all the tasks on the landing page.
 
-** there is going to be an overview of all lists, merged in one. **
-** study page **
-** private page **
-** general, for the leftover tasks**
+** three sections are going to be seen on the first page
+** study section, private section and general section
+** when entering those, especially studies there are going to be more subpages.
+** 
