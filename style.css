@@ -1,3 +1,43 @@
+/* all screen sizes */
+header {
+  background-color: grey;
+  color: white;
+  padding: 20px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+footer {
+  background-color: darkgrey;
+  color: white;
+  padding: 20px;
+}
+
+/* tablets */
+@media (max-width: 1024px) {
+  main {
+    max-width: 600px;
+    padding: 10px;
+  }
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  header, footer {
+    padding: 10px;
+  }
+
+  main {
+    max-width: 400px;
+    padding: 10px;
+  }
+}
+
+
 h1 {
   text-align: center;
   color: #2b83e2;
