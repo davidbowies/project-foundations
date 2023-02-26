@@ -7,4 +7,4 @@
 ** three sections are going to be seen on the first page
 ** study section, private section and general section
 ** when entering those, especially studies there are going to be more subpages.
-** 
+
