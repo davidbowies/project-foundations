@@ -1,81 +1,59 @@
-/* all screen sizes */
-header {
-  background-color: grey;
-  color: white;
-  padding: 20px;
-}
+@media (min-width: 40em){
+  body {
+    grid-template-columns: 12em 1fr;
+    grid-template-rows: auto 1fr auto;
+    background-image: url(file:///Users/violakempa/Desktop/SE/second%20semester/project%20foundations/pictures/yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg);
+    background-color: rgb(201, 231, 255);
+  }
 
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
+  header {
+    grid-column: span 2;
+  }
 
-footer {
-  background-color: darkgrey;
-  color: white;
-  padding: 20px;
-}
-
-/* tablets */
-@media (max-width: 1024px) {
-  main {
-    max-width: 600px;
-    padding: 10px;
+  nav {
+    grid-row: span 2;
   }
 }
 
-/* mobile */
-@media (max-width: 600px) {
-  header, footer {
-    padding: 10px;
-  }
-
-  main {
-    max-width: 400px;
-    padding: 10px;
-  }
-}
-
-
-h1 {
-  text-align: center;
-  color: #2b83e2;
-}
-
-h3 {
+h1, h3 {
   text-align: center;
   color: #2b83e2;
 }
 
 .div1 {
-  background-color: lightgrey;
-  width: 700px;
+  background-color: rgb(228, 243, 255);
+  width: 600px;
   border: 3px solid black;
   border-radius: 20px;
   padding: 50px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 100px);
+  gap: 10px;
 }
 
 
 .div2 {
-  background-color: lightgrey;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  background-color: rgb(228, 243, 255);
   width: 700px;
   border: 3px solid black;
   border-radius: 20px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.div2 {
-  display: flex;
-  width: 100%;
-  overflow: auto;
-}
+
 
 .div2>section.icons {
   flex: 1;
-  box-sizing: border-box
+  box-sizing: border-box;
   padding: 20px;
 }
 
@@ -94,8 +72,17 @@ ul {
 }
 
 .container {
-  border: 1px solid black;
-  padding: 10px;
-  background-color: #f2f2f2;
-  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  background-color: rgb(228, 243, 255);
+  width: 700px;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
 }
