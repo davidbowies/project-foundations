@@ -9,3 +9,7 @@
 ** when entering those, especially studies there are going to be more subpages
 ** the private section and the general section need to be properly designed
 
+**Routing**
+** using flask **
+**This websites root is URL:`/violastodo/<pagetitle>` ** 
+** dynamic routes **
