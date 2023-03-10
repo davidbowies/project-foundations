@@ -1,6 +1,15 @@
-from flask import Flask, redirect, url_for, render_template
+from flask import Flask, render_template
 
 app = Flask(__name__)
+
+to_do_list = {
+    '1' : {'task': 'Complete project proposal', 'status': 'in progress'},
+    '2' : {'task': 'Attend meeting with team', 'status': 'complete'},
+    '3' : {'task': 'Research competitors', 'status': 'not started'},
+    '4' : {'task': 'Create wireframe designs', 'status': 'in progress'},
+    '5' : {'task': 'Review feedback from stakeholders', 'status': 'not started'},
+    '6' : {'task': 'Finalize project plan', 'status': 'complete'}
+}
 
 @app.route('/')
 def index():
@@ -14,9 +23,17 @@ def about():
 def contact():
     return render_template('private.html')
 
+@app.route("/general")
+def general():
+    return render_template("general.html")
+
 @app.route('/user/<username>')
 def user_profile(username):
     return render_template('user.html', username=username)
 
+@app.route('/todo')
+def to_do():
+    return render_template('todo.html', to_do_list=to_do_list)
+
 if __name__ == '__main__':
-  app.run()
+    app.run()
