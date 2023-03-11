@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html>
+{% extends 'base.html'%}
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Viola's private To Do-List</title>
-  <link rel="stylesheet" href="../static/css/style.css">
-</head>
+{% block head %}
+   {{ super() }}
+   <link rel="stylesheet" href="../static/css/style.css">
+{% endblock %}
 
-<body>
+{%block title%}Viola's private To Do-List{%endblock%}
+
+{%block body%}
   <h1>Let's tackle our tasks</h1>
   <h2 class="heading">Overview tasks</h2>
   <div class="div1">
@@ -19,7 +17,7 @@
     <section class="icons position-top flow-vertical">
       <ul>
         <li class="todo-topics">
-          <img src="../icons/icons8-education.svg" width="62" height="64" loading="lazy" alt="">
+          <img src="../static/icons/icons8-education.svg" width="62" height="64" loading="lazy" alt="">
           <ul>
             <li>
               <h3><strong>studies</strong></h3>
@@ -34,7 +32,7 @@
     <section class="icons position-top flow-vertical">
       <ul>
         <li class="todo-topics">
-          <img src="../icons/icons8-fingerprint-scan.svg" alt="">
+          <img src="../static/icons/icons8-fingerprint-scan.svg" alt="">
           <ul>
             <h3>
               <li><strong>private</strong></li>
@@ -48,7 +46,7 @@
     <section class="icons position-top flow-vertical">
       <ul>
         <li class="todo-topics">
-          <img src="../icons/icons8-select-all.svg" alt="">
+          <img src="../static/icons/icons8-select-all.svg" alt="">
           <ul>
             <h3>
               <li><strong>general</strong></li>
@@ -60,6 +58,6 @@
       </ul>
     </section>
   </div>
-</body>
 
-</html>
+
+{%endblock%}
