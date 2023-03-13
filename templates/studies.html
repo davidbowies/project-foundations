@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html>
+{% extends 'base.html'%}
 
-<head>
-    <title>Viola's private To Do-List</title>
-    <link rel="stylesheet" href="../static/css/style.css">
-</head>
+{% block head %}
+   {{ super() }}
+   <link rel="stylesheet" href="../static/css/style.css">
+{% endblock %}
 
-<body>
+{%block title%}Viola's private To Do-List{%endblock%}
+
+{%block body%}
     <h1>How are your studies going? Tell me!</h1>
     <h3>What kind of tasks are you going to do?</h3>
     <div class="container">
@@ -44,6 +45,4 @@
     </div>
     <a href="../templates/index.html" class="button">main page</a>
 
-</body>
-
-</html>
+{%endblock%}

@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <body>
-            <header>
-                <title>Viola's private To Do-List</title>
-            </header>
-            <h1>Here you can write down everything, so your head does'nt get too crowded</h1>
-        </body>
-    </head>
-</html>
+{% extends 'base.html'%}
+
+{% block head %}
+   {{ super() }}
+   <link rel="stylesheet" href="../static/css/style.css">
+{% endblock %}
+
+{%block title%}Viola's private To Do-List{%endblock%}
+
+{%block body%}
+  <h1>Here you can write down everything, so your head does'nt get too crowded</h1>
+
+{%endblock%}
