@@ -11,5 +11,5 @@
 
 **Routing**
 ** using flask **
-**This websites root is URL:`/violastodo/<pagetitle>` ** 
+**get this page going with python app.py ** 
 ** dynamic routes **
